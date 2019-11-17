@@ -1,0 +1,52 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background: #2566C2;
+    font-family: MicrosoftYaHei;
+}
+.content{
+    display: flex;
+    width: 769px;
+    height: 478px;
+    margin: 120px auto;
+    background: #FFFFFF;
+    border-radius: 6px;
+}
+.right .div1{
+    margin-top: 90px;
+    text-align: center;
+    font-size: 32px;
+    color: #333333;
+}
+.right form{
+    margin: 34px 30px 90px 30px;
+}
+form #input1,#input2{
+    width: 330px;
+    height: 40px;
+    margin-bottom: 16px;
+    padding-left: 10px;
+    background: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    border-radius: 3px;
+}
+form #checkbox{
+    width: 18px;
+    height: 18px;
+}
+.div2{
+    font-size: 12px;
+    margin-bottom: 16px;
+}
+.div2 a{
+    text-decoration: none;
+    margin-left: 200px;
+}
+#input3{
+    width: 330px;
+    height: 40px;
+    background: #4B8DE3;
+    border: 1px solid #4B8DE3;
+    border-radius: 3px;
+    color: #FFFFFF;
+}

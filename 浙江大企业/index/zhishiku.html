@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>知识库</title>
+		<link rel="stylesheet" type="text/css" href="css/dashiji.css">
+		<script src="js/jquery-1.11.2.js"></script>
+		<script src="js/nav.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				//侧边栏滑入滑出
+				$("#content #left a").mouseover(function(){
+					if(!$(this).hasClass("one")){
+						$(this).addClass("one").mouseout(function(){
+							$(this).removeClass();
+						});
+					}
+				});
+			})
+		</script>
+	</head>
+	<body>
+		<div id="header">
+			<div>
+				<span id="time">2019年4月22日</span>
+				<span id="week">星期一</span>
+				<img src="assets/1.png">
+				<span id="userName">登录</span>
+			</div>
+		</div>
+		<div id="caption">
+			<div>
+				<img src="assets/清晰%202.png">
+				<span>浙江省大企业税收服务和管理信息平台</span>
+				<form id="form1">
+					<input type="text" id="input1" placeholder="请输入需要搜索的内容">
+					<input type="button" value="搜索" id="bt1">
+				</form>
+			</div>
+		</div>
+		<div id="nav">
+				<ul>
+						<li id="first"><a href="#">首页</a></li>
+						<li><a href="#">业务平台</a></li>
+						<li ><a href="zhinenggaikuang.html" >职能概括</a></li>
+						<li><a href="gongzuodongtai.html">工作动态</a></li>
+						<li><a href="zhiduguifan.html">制度规范</a></li>
+						<li id="three"><a href="zhishiku.html" id="blue">知识库</a></li>
+						<li><a href="xiazaizhuanqu.html">下载专区</a></li>
+					</ul>
+		</div>
+		<div id="content">
+			<div id="left">
+				<a href="javascript:;">分析指引</a>
+                <a href="javascript:;">税证揖要</a>
+                <a href="javascript:;">案例库</a>
+			</div>
+			<div id="right">
+				<span class="check">知识库</span>
+				<span class="bd"></span>
+				<ul>
+					<li class="first-content"><span class="one">财政部、税务总局联合发文进一步明确永续债的企业所得税税收发文进一步明确永续债的企业所得税税收债的企业所得税税债的企业…</span><span class="two">2019-03-04</span></li>
+					<li><span class="one">西城区税务、市场监管部门联合推出e窗通企业一日准营套餐</span><span class="two">2019-02-28</span></li>
+					<li><span class="one">税法入童心 税收伴成长</span><span class="two">2019-02-06</span></li>
+					<li><span class="one">下沙区税务局个体工商户个税管理成效显著</span><span class="two">2019-01-28</span></li>
+					<li><span class="one">萧山区税务局开展“减税降费 纳税人有话说”税收宣传</span><span class="two">2019-01-17</span></li>
+					<li><span class="one">财政部、税务总局联合发文进一步明确永续债的企业所得税税收</span><span class="two">2018-03-04</span></li>
+					<li><span class="one">西城区税务、市场监管部门联合推出“e窗通企业一日准营套餐</span><span class="two">2018-02-28</span></li>
+					<li><span class="one">税法入童心 税收伴成长</span><span class="two">2019-02-06</span></li>
+					<li><span class="one">下沙区税务局个体工商户个税管理成效显著</span><span class="two">2019-01-28</span></li>
+					<li><span class="one">西城区税务、市场监管部门联合推出e窗通企业一日准营套餐</span><span class="two">2017-02-28</span></li>
+					<li><span class="one">税法入童心 税收伴成长</span><span class="two">2017-02-26</span></li>
+					<li><span class="one">下沙区税务局个体工商户个税管理成效显著</span><span class="two">2017-01-28</span></li>
+				</ul>
+				<div class="one">&lt;</div>
+				<div class="two">1</div>
+				<div class="three">2</div>
+				<div class="four">3</div>
+				<div class="five">···</div>
+				<div class="six">10</div>
+				<div class="seven">&gt;</div>
+				<div class="eight">共10页</div>
+				<div class="nine">到第</div>
+				<input type="text" class="ten">
+				<div class="eleven">页</div>
+				<div class="twelve">确定</div>
+			</div>
+		</div>
+		<div id="bottom">
+			<span class="one">友情链接&nbsp;:</span>
+			<span><a href="#">国家税务总局</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">总局大企业税收服务和管理工作平台</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">浙江省税务局内网</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">金税三期决策支持系统</a></span>
+		</div>
+		<div id="footer">
+			<img src="assets/党政机关%202.png">
+			<div class="one"><a href="">法律声明</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="">网站管理</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="">网站帮助</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="">关于我们</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="">网站纠错</a></div>
+			<div class="two">国家税务总局浙江省税务局版权所有 京ICP备1234568号-2 联系电话：0142-123456</div>
+			<div class="three">浙公网安备 33010250025645号 网站标识码：bm236554412 地址：杭州市滨江区</div>
+			<div class="four">国家税务总局浙江省税务局办公室主办</div>
+		</div>
+	</body>
+</html>

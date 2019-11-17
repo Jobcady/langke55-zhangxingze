@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登录页</title>
+    <link rel="stylesheet" href="css/login.css">
+    <script src="js/public.js"></script>
+    <script>
+        $.addEvent({
+               elem:window,
+               eventType:"load",
+               func:function(){
+                      var userName=document.getElementById("input1");
+                      var pwd=document.getElementById("input2");
+                      var bt1=document.getElementById("input3");
+                      $.addEvent({
+                          elem:bt1,
+                          eventType:"click",
+                          func:function(){
+                                 $.ajax({
+                                   type:"POST",
+                                   url:"check.php",
+                                   data:JSON.stringify({userName:input1.value,pwd:input2.value}),
+                                   dataType:"json",
+                                   success: function(data){
+                                     alert(1111);
+                                   }
+                                });
+                          }
+                      });
+               }
+            });
+      </script>
+</head>
+<body>
+    <div class="top"></div>
+    <div class="content">
+        <div class="left">
+            <img src="assets/screen1.png" alt="">
+        </div>
+        <div class="right">
+            <div class="div1">用户登录</div>
+            <form name="login">
+                <input type="text" placeholder="用户名:" id="input1"><br>
+                <input type="password" id="input2" placeholder="密码:"><br>
+                <div class="div2">
+                        <input type="checkbox" name="" id="checkbox">记住密码
+                        <a href="#">忘记密码?</a>
+                </div>
+                <input type="submit" value="登录" id="input3">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
